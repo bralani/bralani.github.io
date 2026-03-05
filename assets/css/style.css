@@ -62,6 +62,10 @@
   color: #4285F4;
 }
 
+.email {
+  color: #EA4335;
+}
+
 .angellist {
   color: grey;
 }
@@ -85,6 +89,10 @@
 
 .scholar:hover {
   background-color: #4285F4;
+}
+
+.email:hover {
+  background-color: #EA4335;
 }
 
 /* Buttons - Read Me, Contact Us */
