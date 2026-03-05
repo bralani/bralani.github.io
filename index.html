@@ -53,6 +53,8 @@
   <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
   <meta name="robots" content="index, follow" />
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 
 <body>
@@ -161,6 +163,7 @@
   <main>
     <!-- First Section: Heading lines and image -->
     <section id="intro" class="section scrollspy full-height">
+      <canvas id="threejs-canvas"></canvas>
       <div class="overlay"></div>
       <div class="container">
         <div class="col-md-9">
@@ -479,6 +482,9 @@
       })
     })
   </script>
+
+  <!-- Three.js Background -->
+  <script src="/assets/js/three-background.js"></script>
 </body>
 
 </html>
