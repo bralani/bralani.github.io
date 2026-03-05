@@ -133,8 +133,8 @@
     // Update particles
     const positions = particleGeometry.attributes.position.array;
     for (let i = 0; i < config.particleCount; i++) {
-      positions[i * 3] += particleSpeeds[i].x + mouse.x * 0.001;
-      positions[i * 3 + 1] += particleSpeeds[i].y + mouse.y * 0.001;
+      positions[i * 3] += particleSpeeds[i].x + mouse.x * 0.02;
+      positions[i * 3 + 1] += particleSpeeds[i].y + mouse.y * 0.02;
       positions[i * 3 + 2] += particleSpeeds[i].z;
 
       // Wrap particles around bounds
@@ -150,8 +150,8 @@
     // Update geometries
     const time = Date.now() * 0.001;
     geometries.forEach(mesh => {
-      mesh.rotation.x += mesh.userData.rotationSpeed.x + mouse.y * 0.0001;
-      mesh.rotation.y += mesh.userData.rotationSpeed.y + mouse.x * 0.0001;
+      mesh.rotation.x += mesh.userData.rotationSpeed.x + mouse.y * 0.003;
+      mesh.rotation.y += mesh.userData.rotationSpeed.y + mouse.x * 0.003;
       mesh.rotation.z += mesh.userData.rotationSpeed.z;
 
       // Gentle floating motion

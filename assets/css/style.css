@@ -648,7 +648,10 @@ small {
     display: block;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 100;
+  }
+  ul#slide-out.side-nav {
+    z-index: 999;
   }
   .name-title {
     display: block;
