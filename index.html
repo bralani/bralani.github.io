@@ -423,6 +423,7 @@
       .then(function(response) { return response.text(); })
       .then(function(html) {
         document.getElementById('projects-placeholder').innerHTML = html;
+        $(".scrollspy").scrollSpy();
       });
   </script>
 
