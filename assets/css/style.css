@@ -146,6 +146,7 @@
 body {
   color: #333;
   font-size: 18px;
+  background: #ffffff;
 }
 
 /* body {
@@ -215,12 +216,12 @@ nav i {
 /* main */
 
 /* main {
-  background: url(../../assets/img/bg.png) repeat;
+  background: #ffffff;
   padding-left: 190px;
 } */
 
 main {
-  background: url(../../assets/img/bg.png) repeat;
+  background: #ffffff;
   padding-left: 190px;
 }
 
@@ -324,7 +325,7 @@ h3 {
 
 .section {
   padding-bottom: 30px;
-  padding-top: 0;
+  padding-top: 40px;
   position: relative;
 }
 
@@ -689,6 +690,42 @@ small {
     right: initial;
     top: initial;
   }
+}
+
+.section-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #aaa;
+  margin-top: 48px;
+  margin-bottom: 0;
+}
+
+.entry {
+  padding: 24px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.entry:last-child {
+  border-bottom: none;
+}
+
+.entry-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+
+.entry-role {
+  color: #795548;
+  font-weight: 400;
+}
+
+.entry-meta {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 600px) {
